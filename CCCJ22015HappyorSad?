@@ -1,0 +1,15 @@
+sentence = "How are you :-( Doing Today :-)"
+happy = sentence.count(":-)")
+sad = sentence.count(":-(")
+print(happy)
+print(sad)
+if happy == 0:
+    if sad == 0:
+        print("none")
+else:
+    if happy > sad:
+        print("Happy")
+    if happy == sad:
+        print("Unsure")
+    if sad > happy:
+        print("Sad")
