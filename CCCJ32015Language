@@ -1,0 +1,32 @@
+consonant = "bcdfghjklmnpqrstvwxyz"
+consonant1 = "bc"
+consonant2 = "dfg"
+consonant3 = "hjkl"
+consonant4 = "mnpqr"
+consonant5 = "stvwxyz"
+word = "joy"
+ans = ""
+for x in word:
+    if x in consonant:
+        if x in consonant1:
+            ans += x + "a" + consonant[consonant.index(x)+1]
+            
+        if x in consonant2:
+            ans += x + "e" + consonant[consonant.index(x)+1]
+            
+        if x in consonant3:
+            ans += x + "i" + consonant[consonant.index(x)+1]
+            
+        if x in consonant4:
+            ans += x + "o" + consonant[consonant.index(x)+1]
+            
+        if x in consonant5:
+            if x == "z":
+                ans += z + "u" + z            
+            else:
+                ans += x + "u" + consonant[consonant.index(x)+1]
+            
+    else:
+        ans += x
+        continue
+print(ans)
