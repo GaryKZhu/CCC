@@ -1,0 +1,18 @@
+input = "3 30"
+month = int(input[:1])
+print(month)
+date = int(input[1:])
+print(date)
+if month < 2:
+    print("Before")
+else:
+    if month == 2:
+        if date < 18:
+            print("Before")
+        else:
+            if date == 18:
+                print("Special")
+            else:
+                print("After")
+    else:
+        print("After")
